@@ -11,8 +11,10 @@
     --violet: #9743B5;
     --gray: #696A86;
     --gray-light: #C4C4C4;
+    --gray-text: #828282;
     --sfpd: 'San Francisco Pro Display';
     --sfc: 'San Francisco Compact Display';
+    --extra: 'New York Extra Large';
 }
 @import 'base/*.scss';
 @import 'blocks/*.scss';

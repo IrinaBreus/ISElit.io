@@ -1,6 +1,6 @@
 .title {
     color: #696A86;
-    font-family: New York Extra Large;
+    font-family: var(--extra);
     font-size: 64px;
     font-style: italic;
     font-weight: 600;
@@ -8,23 +8,29 @@
     letter-spacing: -0.96px;
     span {
         color: #9743B5;
-        font-family: New York Extra Large;
         font-size: 104px;
         font-style: normal;
         font-weight: 600;
         line-height: 80px;
         letter-spacing: -1.56px;
     }
+    &_mini {
+        font-size: 36px;
+        span {
+            font-size: 70px;
+            margin-left: 14px;
+            margin-top: 10px;
+        }
+    }
 }
 
 .subtitle {
-    font-family: San Francisco Pro Display;
+    font-family: var(--sfpd);
     font-size: 36px;
     font-style: normal;
     letter-spacing: -0.54px;
     &_bold {
         font-weight: 600;
-
     }
 }
 
