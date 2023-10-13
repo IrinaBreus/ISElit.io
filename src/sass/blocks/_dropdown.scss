@@ -1,0 +1,35 @@
+.dropdown {
+    position: relative;
+    &-content {
+        display: none;
+        padding: 12px 26px;
+        position: absolute;
+        margin-top: 20px;
+        margin-left: -26px;
+        background: var(--gray-light);
+        &:hover {
+            display: block;
+        }
+        a {
+            display: block;
+            padding: 0 !important;
+            &:first-child {
+                margin-bottom: 10px;
+            }
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .dropdown-content {
+        margin-left: -20px;
+    }
+}
+@media (max-width: 768px) {
+    .dropdown-content {
+        margin-top: 15px;
+    }
+}

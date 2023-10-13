@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'New York Extra Large', 'San Francisco Pro Display', 'San Francisco Compact Display', sans-serif;
+}
+
+:root {
+    --black: #000000;
+    --white: #FFFFFF;
+    --violet: #9743B5;
+    --gray: #696A86;
+    --gray-light: #C4C4C4;
+    --sfpd: 'San Francisco Pro Display';
+    --sfc: 'San Francisco Compact Display';
+}
+@import 'base/*.scss';
+@import 'blocks/*.scss';

@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'New York Extra Large';
+    src: local('New York Extra Large Semibold'), local('New-York-Extra-Large-Semibold'),
+        url('../fonts/NewYorkExtraLarge-Semibold.woff2') format('woff2'),
+        url('../fonts/NewYorkExtraLarge-Semibold.woff') format('woff'),
+        url('../fonts/NewYorkExtraLarge-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+font-family: 'New York Extra Large';
+src: local('New York Extra Large Semibold Italic'), local('new-york-extra-large-semibold-italic'),
+    url('../fonts/new-york-extra-large-semibold-italic.otf') format('opentype');
+font-weight: 600;
+font-style: italic;
+}
+
+@font-face {
+    font-family: 'San Francisco Pro Display';
+    src: url('../fonts/SFProDisplay-Regular.eot');
+    src: url('../fonts/SFProDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/SFProDisplay-Regular.woff') format('woff'),
+    url('../fonts/SFProDisplay-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'San Francisco Pro Display';
+    src: url('../fonts/SFProDisplay-Medium.eot');
+    src: url('../fonts/SFProDisplay-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/SFProDisplay-Medium.woff') format('woff'),
+    url('../fonts/SFProDisplay-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'San Francisco Pro Display';
+    src: url('../fonts/SFProDisplay-Semibold.eot');
+    src: url('../fonts/SFProDisplay-Semibold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/SFProDisplay-Semibold.woff') format('woff'),
+    url('../fonts/SFProDisplay-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'San Francisco Compact Display';
+    src: url('../fonts/sf-compact-display-regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'San Francisco Compact Display';
+    src: url('../fonts/sf-compact-display-medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'San Francisco Compact Display';
+    src: url('../fonts/sf-compact-display-semibold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+    }
+
