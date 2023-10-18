@@ -1,0 +1,99 @@
+.reviews {
+    background: var(--white);
+    box-shadow: 0px -40px 40px 0px rgba(255, 255, 255, 0.2);
+    padding: 68px 0 90px 0;
+    overflow: hidden;
+    &__title {
+        margin-bottom: 84px;
+    }
+    &__text {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 60px;
+        margin-bottom: 78px;
+        overflow: hidden;
+        &-box {
+            width: 30%;
+            color: var(--black);
+            font-family: var(--sfc);
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: -0.33px;
+        }
+    }
+    &__slider {
+        margin-bottom: 100px;
+    }
+    &__comments {
+        margin-bottom: 43px;
+        transition: all .7s;
+    }
+}
+
+.comment {
+    width: 500px;
+    border-radius: 10px;
+    background: var(--white);
+    box-shadow: 10px 20px 20px 0 rgba(0, 0, 0, 0.2);
+    padding: 39px 42px 44px 42px;
+    display: grid;
+    grid-template: repeat(3, max-content) / 96px 1fr;
+    gap: 7px 43px;
+    margin-right: 60px;
+    &__text {
+        grid-area: 1 / 1 / 2 / 3;
+        color: var(--gray-text-light);
+        font-family: var(--sfc);
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    &__avatar {
+        grid-area: 2 / 1 / 4 / 2;
+        img {
+            width: 100%;
+        }
+    }
+    &__name {
+        color: #626780;
+        font-family: var(--sfpd);
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 30px; /* 166.667% */
+    }
+    &__rating {
+        p {
+            color: var(--gray-text-light);
+            font-family: var(--sfc);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+        }
+        svg {
+            width: 12px;
+            height: 12px;
+        }
+    }
+    &__dots {
+        width: 90px;
+        height: 10px;
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+}
+
+.dot {
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: var(--gray-light);
+    border-radius: 100%;
+}
+.dot-active {
+    background: var(--gray);
+}

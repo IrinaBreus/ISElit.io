@@ -1,0 +1,26 @@
+.slider {
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+    gap: 40px;
+    align-items: center;
+    transition: all .7s
+    ;
+}
+
+.arrow_left, .arrow_right {
+    display: flex;
+    width: 60px;
+    height: 60px;
+    background: #DDD;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    svg {
+        width: 10px;
+        height: 16px;
+    }
+    &:hover {
+        background: #d6d6d6;
+    }
+}

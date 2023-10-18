@@ -19,7 +19,12 @@
         span {
             font-size: 70px;
             margin-left: 14px;
-            margin-top: 10px;
+        }
+    }
+    &_ml {
+        margin-left: 97px;
+        span {
+            margin-left: -37px;
         }
     }
 }
