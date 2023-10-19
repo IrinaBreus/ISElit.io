@@ -11,6 +11,7 @@
     <body>
         <header class="header">
             <div class="container">
+
                 <picture class="header__bg">
                     <source media="(min-width: 1201px)" srcset="img/girl1.jpg">
                 <source media="(max-width: 1200px)" srcset="img/girl1_mini.jpg">
@@ -309,7 +310,22 @@
             </div>
         </section>
     
-        <div class="hamburger">
+        <div class="feedback">
+            <div class="container">
+                <div class="feedback__text">Если вы недавно посещали наш салон, ваш отзыв будет полезен нашим будущим клиентам и нам. Спасибо! 
+                </div>
+                <div class="feedback__thanks">Ваш отзыв в обработке! Спасибо за обратную связь!</div>
+                <button class="feedback__btn btn btn_dark">ОСТАВИТЬ ОТЗЫВ</button>
+                <form class="feedback__form">
+                    <div class="feedback__close">&times;</div>
+                    <input type="text" placeholder="Ваше имя" required>
+                    <input type="email" placeholder="e-mail">
+                    <textarea cols="30" rows="10" placeholder="Напишите ваш отзыв"></textarea>
+                    <button class="btn btn_form btn_dark ">ОТПРАВИТЬ</button>
+                </form>
+            </div>
+        </div>
+        <!-- <div class="hamburger">
             <ul class="hamburger-menu">
                 <li class="menu-active"><a href="#" >Салон</a></li>
                 <li><a href="#">Учебный центр</a>
@@ -321,7 +337,7 @@
                 <li><a href="#">Акции</a></li>
                 <li><a href="#">Контакты</a></li>
             </ul>
-        </div>
+        </div> -->
     <!-- <svg>
         <use xlink:href="icons/symbol-defs.svg#icon-Brush"></use>
     </svg> -->

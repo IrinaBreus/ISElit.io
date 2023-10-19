@@ -1,7 +1,7 @@
 .btn {
     padding: 12px 105px;
     border: none;
-    font-family: 'San Francisco Pro Display';
+    font-family: var(--sfpd);
     font-size: 36px;
     font-weight: 500;
     line-height: normal;
@@ -21,6 +21,13 @@
             transform: translateY(5px);
             box-shadow: inset 2px 5px 15px;
         }
+    }
+    &_form {
+        width: 100%;
+        padding: 12px 0;
+        font-family: var(--sfc);
+        font-size: 30px;
+        font-weight: 500;
     }
 }
 

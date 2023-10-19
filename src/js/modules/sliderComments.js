@@ -18,28 +18,34 @@ const sliderComments = () => {
     field.style.width = 100 * width + '%';
     field.style.display = 'flex';
 
-    document.addEventListener('mousedown', (e) => {
+    field.addEventListener('mousedown', (e) => {
         e.preventDefault();
         x1 = e.clientX;
     });
 
-    document.addEventListener('mouseup', (e) => {
+    field.addEventListener('mouseup', (e) => {
         e.preventDefault();
         let x2 = e.clientX;
         let diff = x2 - x1;
         if (diff > 0) {
-            console.log('right');
             movieRight();
         }
         if (diff < 0) {
-            console.log('left');
             movieLeft();
         }
     });
     
-    function movieRight() {
+    const dots = document.querySelectorAll('.dot');
+    dots.forEach((dot, i) => {
+        dot.addEventListener('click', () => {
+            dotActive(i);
+            offset = width * i;
+            field.style.transform = `translateX(-${offset}px)`;
+        })
+    });
+
+   function movieRight() {
         if (offset == 0) {
-            // offset = width * (box.length - 2);
             return;
         } else {
             offset -= width;
@@ -51,7 +57,6 @@ const sliderComments = () => {
         }
         field.style.transform = `translateX(-${offset}px)`;
         dotActive(dotIndex);
-        console.log(dotIndex);
     }
 
     function movieLeft() {
@@ -62,23 +67,18 @@ const sliderComments = () => {
         }
 
         if (offset <= width * box.length - 2) {
-            // offset = 0;
             offset += width;
-            // return;
         } 
-        // else {
-        // }
 
         
         field.style.transform = `translateX(-${offset}px)`;
         dotActive(dotIndex);
-        console.log(dotIndex);
     }
 
 
     function createDots() {
         for (let dot of box) {
-            dot = document.createElement('span');
+            dot = document.createElement('div');
             dot.classList.add('dot');
             dotsContainer.append(dot);
         }
