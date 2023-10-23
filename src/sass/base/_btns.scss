@@ -28,6 +28,11 @@
         font-family: var(--sfc);
         font-size: 30px;
         font-weight: 500;
+        cursor: pointer;
+        background: #DCC4FF;
+        &:hover {
+            background: #b6a2d4;
+        }
     }
 }
 

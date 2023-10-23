@@ -1,5 +1,4 @@
 .title {
-    color: #696A86;
     font-family: var(--extra);
     font-size: 64px;
     font-style: italic;
@@ -7,12 +6,20 @@
     line-height: normal;
     letter-spacing: -0.96px;
     span {
-        color: #9743B5;
         font-size: 104px;
         font-style: normal;
         font-weight: 600;
         line-height: 80px;
         letter-spacing: -1.56px;
+    }
+    &_dark {
+        color: var(--gray);
+        span {
+            color: var(--violet);
+        }
+    }
+    &_light {
+        color: var(--white);
     }
     &_mini {
         font-size: 36px;
