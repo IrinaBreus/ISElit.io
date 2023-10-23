@@ -67,6 +67,12 @@
             font-size: 64px;
             line-height: 60px;
         }
+        &_ml {
+            margin-left: 37px;
+            span {
+                margin-left: -17px;
+            }
+        }
     }
     
     .subtitle {

@@ -22,6 +22,12 @@
             box-shadow: inset 2px 5px 15px;
         }
     }
+    &_light {
+        background: #DCC4FF;
+        &:hover {
+            background: #b6a2d4;
+        }
+    }
     &_form {
         width: 100%;
         padding: 12px 0;
@@ -29,10 +35,6 @@
         font-size: 30px;
         font-weight: 500;
         cursor: pointer;
-        background: #DCC4FF;
-        &:hover {
-            background: #b6a2d4;
-        }
     }
 }
 
@@ -40,6 +42,10 @@
     .btn {
         padding: 12px 85px;
         font-size: 32px;
+        &_form {
+            padding: 12px 0;
+            font-size: 24px;
+        }
     }
 }
 
@@ -47,6 +53,10 @@
     .btn {
         padding: 12px 60px;
         font-size: 26px;
+        &_form {
+            padding: 12px 0;
+            font-size: 24px;
+        }
     }
 }
 
