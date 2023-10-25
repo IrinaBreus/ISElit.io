@@ -1,0 +1,103 @@
+.practic {
+    display: grid;
+    grid-template: 272px max-content 86px / 3fr 9fr;
+    &__container {
+        grid-area: 1 / 1 / 3 / 3;
+        background: url(../img/practic.jpg) center left / cover no-repeat;
+    }
+    &__text-box {
+        grid-area: 2 / 2 / 4 / 3;
+        background: var(--gray);
+        padding: 40px 54px 72px 54px;
+    }
+    &__title {
+        margin-bottom: 42px;
+    }
+    &__subtitle {
+        color: var(--white);
+        font-family: var(--sfc);
+        font-size: 36px;
+        font-weight: 600;
+        letter-spacing: -0.54px;
+        margin-bottom: 28px;
+    }
+    &__descr {
+        width: 80%;
+        color: var(--white);
+        font-family: var(--sfc);
+        font-size: 26px;
+        font-weight: 400;
+        letter-spacing: -0.39px;
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .practic {
+        grid-template: 200px max-content 86px / 3fr 9fr;
+        &__text-box {
+            padding-right: 20px;
+        }
+        &__subtitle {
+            font-size: 30px;
+        }
+        &__descr {
+            width: 90%;
+            font-size: 24px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .practic {
+        grid-template: 140px max-content 66px / 4fr 8fr;
+        &__text-box {
+            padding: 30px 20px 52px 44px;
+        }
+        &__subtitle {
+            font-size: 28px;
+        }
+        &__descr {
+            width: 90%;
+            font-size: 22px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .practic {
+        grid-template: 100px max-content 46px / 4fr 8fr;
+        &__subtitle {
+            font-size: 22px;
+        }
+        &__descr {
+            font-size: 18px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .practic {
+        display: grid;
+        grid-template: 1fr / 1fr;
+        &__container {
+            grid-area: 1 / 1 / 2 / 2;}
+        &__text-box {
+            grid-area: 1 / 1 / 2 / 2;
+            background: rgba($color: #696A86, $alpha: .6);
+            padding: 30px 20px 52px 20px;
+        }
+        &__title {
+            margin-bottom: 22px;
+        }
+        &__subtitle {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        &__descr {
+            width: 100%;
+            font-size: 18px;
+            line-height: 130%;
+        }
+    }
+}
