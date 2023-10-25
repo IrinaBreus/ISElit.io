@@ -53,6 +53,19 @@
             font-size: 84px;
             line-height: 60px;
         }
+        &_mini {
+            font-size: 36px;
+            span {
+                font-size: 60px;
+                margin-left: 14px;
+            }
+        }
+        &_ml {
+            margin-left: 97px;
+            span {
+                margin-left: -37px;
+            }
+        }
     }
     
     .subtitle {
@@ -66,6 +79,13 @@
         span {
             font-size: 64px;
             line-height: 60px;
+        }
+        &_mini {
+            font-size: 32px;
+            span {
+                font-size: 44px;
+                margin-left: 14px;
+            }
         }
         &_ml {
             margin-left: 37px;
@@ -86,6 +106,19 @@
         span {
             font-size: 46px;
             line-height: 40px;
+        }
+        &_mini {
+            font-size: 30px;
+            span {
+                font-size: 44px;
+                margin-left: 14px;
+            }
+        }
+        &_ml {
+            margin-left: 27px;
+            span {
+                margin-left: -27px;
+            }
         }
     }
     
