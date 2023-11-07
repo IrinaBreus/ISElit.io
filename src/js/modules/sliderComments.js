@@ -1,7 +1,7 @@
-const sliderComments = () => {
-    const field = document.querySelector('.reviews__comments'),
-          box = document.querySelectorAll('.comment'),
-          dotsContainer = document.querySelector('.comment__dots');
+const sliderComments = (fieldS, dotsS) => {
+    const field = document.querySelector(fieldS),
+          box = field.querySelectorAll('.comment'),
+          dotsContainer = document.querySelector(dotsS);
 
     let width,
         x1 = 0,
@@ -35,7 +35,7 @@ const sliderComments = () => {
         }
     });
     
-    const dots = document.querySelectorAll('.dot');
+    const dots = dotsContainer.querySelectorAll('.dot');
     dots.forEach((dot, i) => {
         dot.addEventListener('click', () => {
             dotActive(i);
@@ -84,7 +84,7 @@ const sliderComments = () => {
         }
     }
     function dotActive(i) {
-        let dots = document.querySelectorAll('.dot');
+        let dots = dotsContainer.querySelectorAll('.dot');
         dots.forEach(dot => {
             dot.classList.remove('dot-active');
         });

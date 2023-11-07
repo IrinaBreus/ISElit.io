@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 dropdown();
 hamburger();
-sliderComments();
+sliderComments('.reviews__comments', '.reviews__dots');
+sliderComments('.works__comments', '.works__dots');
 feedback();
 });

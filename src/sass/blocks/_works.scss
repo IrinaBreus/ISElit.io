@@ -1,0 +1,26 @@
+.works {
+    background: var(--white);
+    box-shadow: 0px -40px 40px 0px rgba(255, 255, 255, 0.2);
+    padding: 68px 0 90px 0;
+    overflow: hidden;
+    &__title {
+        margin-bottom: 84px;
+    }
+    &__text {
+        width: 70%;
+        color: var(--black);
+        font-family: var(--sfc);
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: -0.33px;
+        margin-bottom: 78px;
+    }
+    &__slider {
+        margin-bottom: 100px;
+    }
+    &__comments {
+        margin-bottom: 43px;
+        transition: all .7s;
+    }
+}

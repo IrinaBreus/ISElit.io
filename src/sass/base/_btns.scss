@@ -27,6 +27,23 @@
         &:hover {
             background: #b6a2d4;
         }
+        &:active {
+            transform: translateY(5px);
+            box-shadow: inset 2px 5px 15px;
+        }
+    }
+    &_white {
+        background: var(--white);
+        &:hover {
+            background: #ece7f3;
+        }
+        &:active {
+            transform: translateY(5px);
+            box-shadow: inset 2px 5px 15px;
+        }
+    }
+    &_p46 {
+        padding: 12px 46px;
     }
     &_form {
         width: 100%;

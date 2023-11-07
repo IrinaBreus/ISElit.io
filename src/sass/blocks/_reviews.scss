@@ -78,16 +78,16 @@
             height: 12px;
         }
     }
-    &__dots {
-        width: 90px;
-        height: 10px;
-        display: flex;
-        justify-content: space-around;
-        margin: 0 auto;
-    }
 }
 
-.dot {
+.dots__container {
+    width: 90px;
+    height: 10px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+.dot, .dot1 {
     display: block;
     width: 10px;
     height: 10px;
