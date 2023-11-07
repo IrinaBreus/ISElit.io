@@ -19,8 +19,12 @@
         grid-template-columns: max-content 6fr 160px;
         column-gap: 20px;
         align-items: center;
-        margin-bottom: 86px;
+        margin-bottom: 20px;
+        &_first {
+            margin-bottom: 86px;
+        }
     }
+    
     &__logo {
         display: flex;
         align-items: center;

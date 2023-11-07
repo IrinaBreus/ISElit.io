@@ -36,6 +36,49 @@
     }
 }
 
+.title2 {
+    color: var(--black);
+    font-family: var(--extra);
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: -0.36px;
+    &_big {
+        color: var(--gray);
+        font-size: 104px;
+        font-weight: 600;
+        line-height: 60px;
+        letter-spacing: -1.56px;
+    }
+    &_circle {
+        color: #FFF;
+        font-size: 64px;
+        font-weight: 600;
+        line-height: normal;
+        position: relative;
+        margin-left: 22px;
+        z-index: 10;
+        &::before {
+            content: '';
+            width: 64px;
+            height: 64px;
+            left: -22px;
+            top: 50%;
+            transform: translateY(-40%);
+            background: #EC4040;
+            border-radius: 100%;
+            position: absolute;
+            z-index: -1;
+        }
+    }
+    &_italic {
+        color: #696A86;
+        font-size: 64px;
+        font-style: italic;
+        font-weight: 600;
+        line-height: normal;
+    }
+}
+
 .subtitle {
     font-family: var(--sfpd);
     font-size: 36px;

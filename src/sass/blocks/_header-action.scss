@@ -1,0 +1,22 @@
+.header-action {
+    background: url('../../img/action/actionBG.jpg') right top / cover no-repeat;
+    padding: 64px 124px;
+    &__title {
+        margin-bottom: 148px;
+    }
+    &__descr, &__text {
+        width: 40%;
+        font-family: var(--sfc);
+        font-size: 22px;
+        font-weight: 400;
+        letter-spacing: -0.33px;
+        margin-bottom: 30px;
+        margin-left: 40px;
+    }
+    &__img {
+        margin-bottom: 285px;
+    }
+    &__text {
+        margin-bottom: 100px;
+    }
+}
