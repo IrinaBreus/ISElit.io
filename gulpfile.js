@@ -109,8 +109,13 @@ const clear = () => {
 const server = () => {
     browserSync.init({
         server: {
-            baseDir: "./dist"
-        }
+            baseDir: "./dist",
+            serveStaticOptions: {
+                extensions: ["html"]
+            }
+        },
+		port: 4000,
+		notify: true
     });
 }
 
