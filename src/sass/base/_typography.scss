@@ -50,13 +50,14 @@
         letter-spacing: -1.56px;
     }
     &_circle {
+        position: relative;
         color: #FFF;
         font-size: 64px;
         font-weight: 600;
         line-height: normal;
         position: relative;
         margin-left: 22px;
-        z-index: 10;
+        z-index: 0;
         &::before {
             content: '';
             width: 64px;
@@ -110,6 +111,23 @@
             }
         }
     }
+    .title2 {
+        &_big {
+            font-size: 84px;
+        }
+        &_circle {
+            font-size: 54px;
+            &::before {
+                content: '';
+                width: 54px;
+                height: 54px;
+                left: -18px;
+            }
+        }
+        &_italic {
+            font-size: 54px;
+        }
+    }
     
     .subtitle {
         font-size: 30px;
@@ -137,7 +155,25 @@
             }
         }
     }
-    
+    .title2 {
+        &_big {
+            font-size: 64px;
+            line-height: 40px;
+        }
+        &_circle {
+            font-size: 34px;
+            margin-left: 12px;
+            &::before {
+                content: '';
+                width: 34px;
+                height: 34px;
+                left: -12px;
+            }
+        }
+        &_italic {
+            font-size: 34px;
+        }
+    }
     .subtitle {
         font-size: 24px;
     }
@@ -162,6 +198,26 @@
             span {
                 margin-left: -27px;
             }
+        }
+    }
+
+    .title2 {
+        font-size: 20px;
+        &_big {
+            font-size: 44px;
+            line-height: 30px;
+        }
+        &_circle {
+            font-size: 24px;
+            &::before {
+                content: '';
+                width: 24px;
+                height: 24px;
+                left: -8px;
+            }
+        }
+        &_italic {
+            font-size: 24px;
         }
     }
     

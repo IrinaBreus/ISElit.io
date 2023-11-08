@@ -1,6 +1,12 @@
 .header-action {
-    background: url('../../img/action/actionBG.jpg') right top / cover no-repeat;
-    padding: 64px 124px;
+    padding-top: 64px;
+    position: relative;
+    &__bg {
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -1;
+    }
     &__title {
         margin-bottom: 148px;
     }
@@ -14,9 +20,120 @@
         margin-left: 40px;
     }
     &__img {
-        margin-bottom: 285px;
+        margin-bottom: 193px;
+    }
+    &__info {
+        position: relative;
+        background: #BFBFBF;
+        width: 100%;
+        padding: 92px 0 124px 0;
+        z-index: -2;
     }
     &__text {
         margin-bottom: 100px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .header-action {
+        &__bg {
+            width: 45%;
+        }
+        &__title {
+            margin-bottom: 80px;
+        }
+        &__descr, &__text {
+            width: 50%;
+        }
+        &__img {
+            margin-bottom: 80px;
+            width: 40%;
+        }
+        &__info {
+            padding: 62px 0 104px 0;
+        }
+        &__text {
+            margin-bottom: 80px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .header-action {
+        &__bg {
+            width: 40%;
+            opacity: .6;
+        }
+        &__title {
+            margin-bottom: 60px;
+        }
+        &__descr, &__text {
+            width: 60%;
+            font-size: 20px;
+        }
+        &__img {
+            margin-bottom: 60px;
+            width: 40%;
+        }
+        &__info {
+            padding: 52px 0 84px 0;
+        }
+        &__text {
+            margin-bottom: 60px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .header-action {
+        padding-top: 46px;
+        &__bg {
+            width: 40%;
+            opacity: .5;
+        }
+        &__title {
+            margin-bottom: 40px;
+        }
+        &__descr, &__text {
+            width: 65%;
+        }
+        &__img {
+            margin-bottom: 40px;
+            width: 40%;
+        }
+        &__info {
+            padding: 32px 0 64px 0;
+        }
+        &__text {
+            margin-bottom: 40px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .header-action {
+        padding-top: 30px;
+        &__bg {
+            width: 65%;
+            opacity: .25;
+        }
+        &__title {
+            margin-bottom: 32px;
+        }
+        &__descr, &__text {
+            margin-left: 0;
+            width: 90%;
+            font-size: 18px;
+        }
+        &__img {
+            margin-bottom: 30px;
+            width: 50%;
+        }
+        &__info {
+            padding: 32px 0 54px 0;
+        }
+        &__text {
+            margin-bottom: 30px;
+        }
     }
 }
