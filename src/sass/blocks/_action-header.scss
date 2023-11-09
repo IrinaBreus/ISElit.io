@@ -1,14 +1,16 @@
-.header-action {
+.action-header {
     padding-top: 64px;
     position: relative;
     &__bg {
         position: absolute;
         right: 0;
         top: 0;
-        z-index: -1;
+        z-index: 1;
     }
     &__title {
         margin-bottom: 148px;
+        position: relative;
+        z-index: 2;
     }
     &__descr, &__text {
         width: 40%;
@@ -18,6 +20,8 @@
         letter-spacing: -0.33px;
         margin-bottom: 30px;
         margin-left: 40px;
+        position: relative;
+        z-index: 3;
     }
     &__img {
         margin-bottom: 193px;
@@ -27,15 +31,19 @@
         background: #BFBFBF;
         width: 100%;
         padding: 92px 0 124px 0;
-        z-index: -2;
+        z-index: 0;
     }
     &__text {
         margin-bottom: 100px;
     }
+    &__btn {
+        position: relative;
+        z-index: 10;
+    }
 }
 
 @media (max-width: 1200px) {
-    .header-action {
+    .action-header {
         &__bg {
             width: 45%;
         }
@@ -59,7 +67,7 @@
 }
 
 @media (max-width: 992px) {
-    .header-action {
+    .action-header {
         &__bg {
             width: 40%;
             opacity: .6;
@@ -85,7 +93,7 @@
 }
 
 @media (max-width: 768px) {
-    .header-action {
+    .action-header {
         padding-top: 46px;
         &__bg {
             width: 40%;
@@ -111,7 +119,7 @@
 }
 
 @media (max-width: 576px) {
-    .header-action {
+    .action-header {
         padding-top: 30px;
         &__bg {
             width: 65%;

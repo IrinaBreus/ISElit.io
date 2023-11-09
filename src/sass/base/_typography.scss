@@ -34,6 +34,9 @@
             margin-left: -37px;
         }
     }
+    &_gray {
+        color: var(--gray);
+    }
 }
 
 .title2 {
@@ -187,9 +190,9 @@
             line-height: 40px;
         }
         &_mini {
-            font-size: 30px;
+            font-size: 26px;
             span {
-                font-size: 40px;
+                font-size: 34px;
                 margin-left: 0px;
             }
         }

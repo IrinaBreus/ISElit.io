@@ -55,28 +55,45 @@
                     </div>
                 </nav>
             </div>
-            <div class="header-action">
+            <div class="action-header">
                 <div class="container">
-                    <h1 class="title2 header-action__title">Наши <br>
+                    <h1 class="title2 action-header__title">Наши <br>
                         <span class="title2 title2_big">акции</span><br>
                         <span class="title2 title2_circle">и </span>
                         <span class="title2 title2_italic">спецпредложения</span>
                     </h1>
-                    <div class="header-action__descr">На наших курсах бесплатно выдаются  все необходимые материалы на время обучения: методические материалы и инструменты для отработки практики, одноразовые маски, перчатки, тапочки, крема, антисептики, очистители, жидкости и др. 
+                    <div class="action-header__descr">На наших курсах бесплатно выдаются  все необходимые материалы на время обучения: методические материалы и инструменты для отработки практики, одноразовые маски, перчатки, тапочки, крема, антисептики, очистители, жидкости и др. 
                     </div>
-                    <img src="img/action/kraska.png" alt="краска" class="header-action__img">
+                    <img src="img/action/kraska.png" alt="краска" class="action-header__img">
                 </div>
-                <img class="header-action__bg" src="img/action/akcia_PICT.png" alt="">
-                <div class="header-action__info">
+                <img class="action-header__bg" src="img/action/akcia_PICT.png" alt="">
+                <div class="action-header__info">
                     <div class="container">
-                        <p class="header-action__text">Все спецпредложения и акции нашего учебного центра вы всегда сможете узнать по телефону</p>
-                        <button class="btn btn_white btn_p58">ЗАКАЗАТЬ ЗВОНОК</button>
+                        <p class="action-header__text">Все спецпредложения и акции нашего учебного центра вы всегда сможете узнать по телефону</p>
+                        <button class="btn btn_white btn_p58 action-header__btn">ЗАКАЗАТЬ ЗВОНОК</button>
+                        <form class="action-header__form">
+                            <div class="feedback__close">&times;</div>
+                            <input type="text" placeholder="Ваше имя" required>
+                            <input type="email" placeholder="e-mail">
+                            <textarea cols="30" rows="10" placeholder="Напишите ваш отзыв"></textarea>
+                            <button class="btn btn_form btn_dark ">ОТПРАВИТЬ</button>
+                        </form>
                     </div>
                 </div>
             </div>
         </header>
 
-        
+        <section class="action-main">
+            <div class="container">
+                <h2 class="title title_mini title_gray action-main__title">работа <span>с моделями </span></h2>
+                <ul class="action-main__descr">Нам постоянно требуются модели:
+                    <li>мужчины на стрижки, камуфляж, оформление бороды, бритье головы;</li>
+                    <li>женщины на стрижки, окрашивание волос (простое, сложное), макияж, прически, укладки.</li>
+                    <li>Ограничений по внешнему виду нет. Обязательна предварительная запись</li>
+                </ul>
+            </div>
+        </section>
+
 
         <footer class="footer">
             <div class="container">
@@ -115,15 +132,15 @@
 
         <div class="hamburger">
             <ul class="hamburger-menu">
-                <li class="menu-active"><a href="#" >Салон</a></li>
-                <li><a href="#">Учебный центр</a>
+                <li ><a href="index.html">Салон</a></li>
+                <li><a href="courses.html">Учебный центр</a>
                     <ul class="hamburger-submenu">
                         <li><a href="#">Курсы парикмахеров</a></li>
                         <li><a href="#">Курсы маникюра</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Акции</a></li>
-                <li><a href="#">Контакты</a></li>
+                <li class="menu-active"><a href="action.html">Акции</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
             </ul>
         </div>
     <!-- <svg>

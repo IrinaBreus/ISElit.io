@@ -117,6 +117,16 @@
         &__title {
             margin-left: 15px;
         }
+        &__circle {
+            font-size: 46px !important;
+            margin-left: 22px;
+            &::after {
+                width: 46px;
+                height: 46px;
+                top: 12px;
+                left: -16px;
+            }
+        }
         &__text {
             font-size: 22px;
             margin-left: 15px;
