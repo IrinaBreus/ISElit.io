@@ -9,14 +9,8 @@
         <link rel="stylesheet" href="css/style.min.css">
     </head>
     <body>
-        <header class="header">
+        <header class="header contact-header header__second">
             <div class="container">
-
-                <picture class="header__bg">
-                    <source media="(min-width: 1201px)" srcset="img/girl1.jpg">
-                <source media="(max-width: 1200px)" srcset="img/girl1_mini.jpg">
-                <img src="img/girl1.jpg" alt="girl">
-                </picture>
                 <nav class="header__nav">
                     <div class="header__logo">
                         <img src="img/logo_PICT.png" alt="logo">
@@ -60,43 +54,16 @@
                         <span></span>
                     </div>
                 </nav>
-                <div class="header__main">
-                    <div class="header__content">
-                        <h1 class="title title_dark header__title">создай свой имидж <br><span>прической</span></h1>
-                        <h3 class="subtitle subtitle_bold header__descr">Наш салон рад открыть <br> свои двери перед <br> ценителями прекрасного!</h3>
-                        <div class="header__contacts">
-                            <svg>
-                                <use xlink:href="icons/symbol-defs.svg#icon-Phone"></use>
-                            </svg>
-                            <p>телефон <br>
-                                +7-995-923-23-71
-                            </p>
-                            <svg>
-                                <use xlink:href="icons/symbol-defs.svg#icon-Clock"></use>
-                            </svg>
-                            <p>
-                                время работы <br>
-                                вт-вс 8:30-22:00
-                            </p>
-                            <svg>
-                                <use xlink:href="icons/symbol-defs.svg#icon-GEO"></use>
-                            </svg>
-                            <p>
-                                г. Москва, <br>
-                                ул. 16-я Парковая, дом 43
-                            </p>
-                        </div>
-                        <button class="btn btn_dark header__btn">ЗАПИСАТЬСЯ</button>
-                    </div>
-                </div>
             </div>
         </header>
-
         
-
-        <footer class="footer">
-            <div class="container">
-                <div class="footer__container">
+        <section class="contact__main">
+            <div class="contact__content">
+                <h2 class="title2 contact__title">Наши <br>
+                    <span class="title2_big">контакты</span>
+                </h2>
+                <div class="contact__text">Не стесняйтесь, звоните и пишите нам</div>
+                <div class="contact__contacts">
                     <div class="footer__contact">
                         салон <br>
                         <a class="footer__phone" href="tel:+7-926-527-27-52">+7-926-527-27-52</a>
@@ -125,26 +92,30 @@
                         <span class="footer__phone" href="#">ул. 16-я Парковая, д. 43</span>
                     </div>
                 </div>
-
+                <button class="btn btn_dark contact__btn">ЗАПИСАТЬСЯ</button>
+                <div class="contact__img">
+                    <img src="img/contact_img.png" alt="салон парикмахерской">
+                </div>
             </div>
-        </footer>
+            <div class="contact__map">
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A856a0602d4cf67d1f5a2b4947de203c8efb8f18a2a2aa0473b8ba1e709f2c19e&amp;source=constructor" frameborder="0"></iframe>
+            </div>
+        </section>
+        
 
-        <div class="hamburger">
-            <ul class="hamburger-menu">
-                <li class="menu-active"><a href="#" >Салон</a></li>
-                <li><a href="#">Учебный центр</a>
-                    <ul class="hamburger-submenu">
-                        <li><a href="#">Курсы парикмахеров</a></li>
-                        <li><a href="#">Курсы маникюра</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Акции</a></li>
-                <li><a href="#">Контакты</a></li>
-            </ul>
-        </div>
-    <!-- <svg>
-        <use xlink:href="icons/symbol-defs.svg#icon-Brush"></use>
-    </svg> -->
+        <section class="contact__subscribe">
+            <div class="container">
+                <h2 class="title title_light title_mini contact__subtitle">
+                    <span>подпишись</span><br>
+                    на новости
+                </h2>
+                <p class="contact__text contact__text_white">Мы пришлем тебе письмо, когда у нас откроется новый набор на курсы, или информацию об акциях и скидках</p>
+                <form class="contact__form ">
+                    <input type="email" placeholder="e-mail" class="contact__input">
+                    <button class="btn btn_light btn_p85">ПОДПИСАТЬСЯ</button>
+                </form>
+            </div>
+        </section>
     <script src="js/script.js"></script>
 
 
