@@ -2,6 +2,7 @@
     position: relative;
     height: max-content;
     padding: 120px 0 220px 0;
+    z-index: -1;
     &::before {
         content: "";
         background: url('../img/action/models.jpg') 100% center / cover no-repeat;

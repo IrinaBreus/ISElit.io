@@ -40,6 +40,10 @@
         position: relative;
         z-index: 10;
     }
+    &__form {
+        left: 5%;
+        width: 50%;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -62,6 +66,11 @@
         }
         &__text {
             margin-bottom: 80px;
+        }
+        &__form {
+            left: 2%;
+            width: 50%;
+            top: 190px;
         }
     }
 }
@@ -89,6 +98,10 @@
         &__text {
             margin-bottom: 60px;
         }
+        &__form {
+            left: 5%;
+            top: 160px !important;
+        }
     }
 }
 
@@ -114,6 +127,9 @@
         }
         &__text {
             margin-bottom: 40px;
+        }
+        &__form {
+            top: 140px !important;
         }
     }
 }
@@ -142,6 +158,9 @@
         }
         &__text {
             margin-bottom: 30px;
+        }
+        &__form {
+            top: 140px !important;
         }
     }
 }
