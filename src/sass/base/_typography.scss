@@ -68,10 +68,19 @@
             left: -22px;
             top: 50%;
             transform: translateY(-40%);
-            background: #EC4040;
             border-radius: 100%;
             position: absolute;
             z-index: -1;
+        }
+        &-red {
+            &::before {
+                background: #EC4040;
+            }
+        }
+        &-gold {
+            &::before {
+                background: #CD9C76;
+            }
         }
     }
     &_italic {
@@ -91,6 +100,10 @@
     &_bold {
         font-weight: 600;
     }
+}
+
+.pl-58 {
+    padding-left: 58px;
 }
 
 @media (max-width: 992px) {

@@ -1,0 +1,33 @@
+.courses-header {
+    padding: 64px 0 30px 0;
+    position: relative;
+    &__img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+        transition: all 3s ease-in;
+        
+    }
+    &__title {
+        margin-bottom: 60px;
+    }
+    &__subtitle {
+        width: 50%;
+        color: #CD9C76;
+        font-family: var(--sfc);
+        font-size: 36px;
+        font-weight: 600;
+        letter-spacing: -0.54px;
+        margin-bottom: 46px;
+    }
+    &__description {
+        width: 28%;
+        font-family: var(--sfc);
+        font-size: 22px;
+        font-weight: 400;
+        letter-spacing: -0.33px;
+        margin-left: 38px;
+        margin-bottom: 70px;
+    }
+}
