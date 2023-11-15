@@ -1,13 +1,16 @@
 .courses-header {
     padding: 64px 0 30px 0;
     position: relative;
+    overflow: hidden;
     &__img {
         position: absolute;
         top: 0;
         right: 0;
         z-index: -1;
         transition: all 3s ease-in;
-        
+        img {
+            width: 100%;
+        }
     }
     &__title {
         margin-bottom: 60px;
@@ -29,5 +32,91 @@
         letter-spacing: -0.33px;
         margin-left: 38px;
         margin-bottom: 70px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .courses-header {
+        padding: 54px 0 30px 0;
+        &__img {
+            width: 55%;
+            right: -5%;
+            top: 150px;
+            
+        }
+        &__subtitle {
+            font-size: 32px;
+
+        }
+        &__description {
+            width: 45%;
+            margin-bottom: 60px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .courses-header {
+        padding: 34px 0 30px 0;
+        &__img {
+            width: 50%;
+            top: 120px;
+        }
+        &__title {
+            margin-bottom: 60px;
+        }
+        &__subtitle {
+            width: 60%;
+            font-size: 28px;
+        }
+        &__description {
+            width: 65%;
+            margin-left: 0;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .courses-header {
+        padding: 21px 0 30px 0;
+        &__img {
+            width: 50%;
+            top: 90px;
+        }
+        &__title {
+            margin-bottom: 40px;
+        }
+        &__subtitle {
+            width: 70%;
+            font-size: 24px;
+            margin-bottom: 40px;
+        }
+        &__description {
+            width: 70%;
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .courses-header {
+        padding-top: 0;
+        &__img {
+            width: 45%;
+            top: 15%;
+        }
+        &__title {
+            margin-bottom: 30px;
+        }
+        &__subtitle {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        &__description {
+            width: 95%;
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
     }
 }
