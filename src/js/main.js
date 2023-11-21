@@ -3,6 +3,7 @@ import dropdown from "./modules/dropdown";
 import forms from "./modules/forms";
 import hamburger from "./modules/hamburger";
 import sliderComments from "./modules/sliderComments";
+import tabs from "./modules/tabs";
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -15,4 +16,5 @@ sliderComments('.works__comments', '.works__dots');
 forms('.feedback__btn', '.feedback__form');
 forms('.action-header__btn', '.action-header__form');
 carouselAuto();
+tabs('#allCoursesBarber');
 });

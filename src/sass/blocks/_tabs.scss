@@ -16,6 +16,7 @@
         font-weight: 400;
         line-height: normal;
         letter-spacing: -0.36px;
+        cursor: pointer;
     }
 }
 
@@ -171,7 +172,7 @@
         }
     }
     &__option {
-        width: 386px;
+        width: 100%;
         background: var(--white);
         padding: 40px 0 65px 0;
         text-align: center;
