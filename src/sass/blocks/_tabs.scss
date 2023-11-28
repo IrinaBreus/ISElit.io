@@ -7,6 +7,8 @@
     grid-template-columns: repeat(3, 1fr);
     text-align: center;
     border-bottom: 4px solid black;
+    list-style: none;
+    padding: 0;
     &__item {
         padding-bottom: 31px;
         color: rgba(0, 0, 0, 0.50);
@@ -175,11 +177,12 @@
     }
     
     &__options {
-        width: max-content;
+        width: 100%;
         margin: 0 auto;
         background: var(--black);
         gap: 1px;
         display: grid;
+        margin-bottom: 50px;
         &_2 {
             grid-template-columns: repeat(2, 1fr);
         }
@@ -192,7 +195,7 @@
         }
     }
     &__option {
-        width: 25vw;
+        width: 100%;
         background: var(--white);
         padding: 40px 0 65px 0;
         text-align: center;
@@ -222,8 +225,85 @@
         font-weight: 400;
         letter-spacing: -0.27px;
     }
+
+    &__program {
+        position: relative;
+        transition: all .7s;
+    }
+    &__program-title {
+        display: inline;
+        margin-right: 34px;
+    }
+    &__plus-btn {
+        margin-bottom: 60px; 
+        display: inline-block;
+        cursor: pointer;
+        transition: all .4s;
+        svg {
+            width: 60px;
+            height: 60px;
+        }
+    }
+    &__circle {
+        position: absolute;
+        z-index: -1;
+        &_top {
+            width: 40%;
+            height: 305px;
+            left: -6%;
+            top: 0;
+        }
+        &_right {
+            width: 35%;
+            height: 400px;
+            top: 111px;
+            right: -15%;
+        }
+    }
+    &__plus-content {
+        width: 60%;
+        margin: 0 auto;
+        padding: 20px 0;
+        height: 0;
+        opacity: 0;
+        transition: all .7s ease-in;
+        ol {
+            list-style: none;
+            counter-reset: li;
+            margin-bottom: 40px;
+            margin-left: -20px;
+            li {
+                font-family: var(--sfc);
+                font-size: 18px;
+                font-weight: 400;
+                letter-spacing: -0.27px;
+            }
+        }
+        li {
+            font-family: var(--sfc);
+            font-size: 26px;
+            font-weight: 400;
+            letter-spacing: -0.39px;
+            counter-increment: li;
+            li:before {
+                content: counters(li,".")"  ";
+            }
+        }
+    }
+    &__bg {
+        width: 95%;
+        display: block;
+        margin: 0 auto;
+    }
 }
 
+.rotate {
+    transform: rotate(45deg);
+}
+.show {
+    height: max-content;
+    opacity: 1;
+}
 
 @media (max-width: 1200px) {
     .tab-container {
@@ -281,6 +361,19 @@
         
         &__sub {
             font-size: 28px;
+        }
+
+        &__circle {
+            &_top {
+                height: 205px;
+                left: -6%;
+            }
+            &_right {
+                height: 350px;
+            }
+        }
+        &__plus-content {
+            width: 75%;
         }
     }
 }
@@ -367,7 +460,6 @@
             }
         }
         &__option {
-            width: 25vw;
             padding: 30px 0 55px 0;
             svg {
                 width: 80px;
@@ -457,7 +549,6 @@
             }
         }
         &__option {
-            width: 35vw;
             svg {
                 width: 80px;
                 height: 80px;
@@ -473,6 +564,29 @@
         &__sub {
             font-size: 24px;
             margin-bottom: 10px;
+        }
+        &__program-title {
+            margin-right: 24px;
+        }
+        &__plus-btn {
+            margin-bottom: 40px; 
+            svg {
+                width: 50px;
+                height: 50px;
+            }
+        }
+        &__circle {
+            &_right {
+                height: 300px;
+                right: -5%;
+            }
+        }
+        &__plus-content {
+            width: 95%;
+            li {
+                font-size: 20px;
+                margin-bottom: 6px;
+            }
         }
     }
 }
@@ -609,6 +723,37 @@
         }
         &__descr {
             font-size: 16px;
+        }
+        &__program-title {
+            margin-right: 14px;
+        }
+        &__plus-btn {
+            margin-left: 80%;
+            margin-bottom: 20px; 
+            display: inline-block;
+            svg {
+                width: 40px;
+                height: 40px;
+            }
+        }
+        &__circle {
+            &_top {
+                height: 105px;
+            }
+            &_right {
+                height: 250px;
+            }
+        }
+        &__plus-content {
+            ol {
+                margin-left: 0;
+                li {
+                    font-size: 16px;
+                }
+            }
+            li {
+                font-size: 20px;
+            }
         }
     }
 }

@@ -2,7 +2,8 @@ const tabs = (containerID) => {
     try {
         const tabContainer = document.querySelector(containerID),
               headers = tabContainer.querySelectorAll('.tab-header__item'),
-              contents = tabContainer.querySelectorAll('.tab-content');
+              contents = tabContainer.querySelectorAll('.tab-content'),
+              plusBtns = tabContainer.querySelectorAll('.tab-content__plus-btn');
     
     
         showContent(0);
@@ -13,7 +14,14 @@ const tabs = (containerID) => {
                 showContent(i);
                 elem.classList.add('tab-active');
             })
-        })
+        });
+
+        plusBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                btn.classList.toggle('rotate');
+                btn.nextElementSibling.classList.toggle('show');
+            })
+        });
     
         function clearActiveClass() {
             headers.forEach(elem => elem.classList.remove('tab-active'));
