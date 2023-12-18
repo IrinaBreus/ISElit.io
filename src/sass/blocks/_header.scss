@@ -108,6 +108,11 @@
         text-decoration: underline !important;
     }
 }
+.menu-noactive {
+    a {
+        text-decoration: none !important;
+    }
+}
 
 @media (max-width: 1200px) {
     .header {

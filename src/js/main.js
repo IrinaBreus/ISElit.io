@@ -19,4 +19,6 @@ carouselAuto('.hairdresser-all');
 carouselAuto('.manicure-all');
 tabs('#allCoursesBarber');
 tabs('#allCoursesManicure');
+tabs('#coursesBarber');
+tabs('#coursesManicure');
 });
