@@ -23,6 +23,10 @@
             box-shadow: inset 2px 5px 15px;
         }
     }
+    &_gray {
+        background: var(--gray);
+        color: var(--white);
+    }
     &_light {
         background: #DCC4FF;
         &:hover {
@@ -42,6 +46,14 @@
             transform: translateY(5px);
             box-shadow: inset 2px 5px 15px;
         }
+    }
+    &_center {
+        display: block;
+        margin: 0 auto;
+    }
+    &_p94 {
+        padding: 12px 94px;
+        border-radius: 33px;
     }
     &_p46 {
         padding: 12px 46px;

@@ -23,6 +23,9 @@
         font-weight: 600;
         letter-spacing: -0.54px;
         margin-bottom: 46px;
+        &_main {
+            color: var(--violet);
+        }
     }
     &__description {
         width: 28%;
@@ -101,7 +104,7 @@
 
 @media (max-width: 576px) {
     .courses-header {
-        padding-top: 0;
+        padding: 0 8px 30px 8px;
         &__img {
             width: 45%;
             top: 15%;

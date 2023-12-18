@@ -1,6 +1,6 @@
-const carouselAuto = () => {
+const carouselAuto = (imgSelect) => {
     try {
-        const images = document.querySelectorAll('.courses-header__img');
+        const images = document.querySelectorAll(imgSelect);
         
         let index = 0;
 

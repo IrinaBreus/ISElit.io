@@ -128,51 +128,8 @@
         margin-bottom: 10px;
     }
     &__hour {
-        position: relative;
-        color: var(--white);
-        font-family: var(--sedan);
-        font-size: 96px;
-        font-weight: 400;
-        letter-spacing: -1.44px;
-        &::after {
-            content: "";
-            width: 148px;
-            height: 148px;
-            background: var(--violet);
-            position: absolute;
-            border-radius: 50%;
-            top: 6px;
-            left: -22px;
-            z-index: -1;
-        }
-        span {
-            position: absolute;
-            top: 94px;
-            left: 40px;
-            color: var(--black);
-            font-family: var(--extra);
-            font-size: 30px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: normal;
-            letter-spacing: -0.45px;
-        }
-    }
-    &__num {
-        position: relative;
-        font-family: var(--sedan);
-        font-size: 72px;
-        font-weight: 400;
-        letter-spacing: -1.44px;
-        left: 30px;
-        &::before {
-            content: "1";
-            font-family: 'Times-Italic';
-            font-size: 96px;
-            font-style: italic;
-            position: absolute;
-            top: 20px;
-            left: -40px;
+        svg {
+            width: 100%;
         }
     }
     
@@ -228,7 +185,6 @@
 
     &__program {
         position: relative;
-        transition: all .7s;
     }
     &__program-title {
         display: inline;
@@ -267,6 +223,10 @@
         height: 0;
         opacity: 0;
         transition: all .7s ease-in;
+        font-family: var(--sfc);
+        font-size: 26px;
+        font-weight: 400;
+        letter-spacing: -0.39px;
         ol {
             list-style: none;
             counter-reset: li;
@@ -286,7 +246,7 @@
             letter-spacing: -0.39px;
             counter-increment: li;
             li:before {
-                content: counters(li,".")"  ";
+                content: counters(li,".")".  ";
             }
         }
     }
@@ -350,12 +310,6 @@
                 span {
                     font-size: 16px;
                 }
-            }
-        }
-        &__hour {
-            font-size: 92px;
-            span {
-                font-size: 28px;
             }
         }
         
@@ -439,25 +393,6 @@
         }
         &__txt {
             font-size: 26px;
-        }
-        &__hour {
-            font-size: 76px;
-            &::after {
-                content: "";
-                width: 128px;
-                height: 128px;
-            }
-            span {
-                top: 74px;
-                left: 30px;
-                font-size: 28px;
-            }
-        }
-        &__num {
-            font-size: 62px;
-            &::before {
-                font-size: 86px;
-            }
         }
         &__option {
             padding: 30px 0 55px 0;
@@ -649,7 +584,7 @@
             p {
                 font-size: 20px;
                 span {
-                    font-size: 14px;
+                    font-size: 16px;
                 }
             }
         }
@@ -659,9 +594,9 @@
             left: 0;
             right: 0;
             p {
-                font-size: 20px;
+                font-size: 18px;
                 span {
-                    font-size: 14px;
+                    font-size: 16px;
                 }
             }
         }
@@ -672,32 +607,6 @@
         }
         &__txt {
             font-size: 24px;
-        }
-        &__hour {
-            font-size: 76px;
-            &::after {
-                content: "";
-                width: 120px;
-                height: 120px;
-                top: 0;
-                left: -25px;
-            }
-            span {
-                top: 80px;
-                left: 40px;
-                font-size: 20px;
-            }
-        }
-        &__num {
-            position: relative;
-            font-family: var(--sedan);
-            font-size: 62px;
-            left: 18px;
-            &::before {
-                font-size: 82px;
-                top: 15px;
-                left: -33px;
-            }
         }
         
         &__options {
