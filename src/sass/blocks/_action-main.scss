@@ -18,10 +18,12 @@
         margin-bottom: 12px;
     }
     &__descr {
-        width: 45%;
         font-family: var(--sfc);
         font-size: 26px;
         font-weight: 400;
+    }
+    &__lists {
+        width: 45%;
         li {
             margin-left: 40px;
             font-family: var(--sfc);
@@ -60,8 +62,10 @@
             opacity: .7;
         }
         &__descr {
-            width: 75%;
             font-size: 24px;
+        }
+        &__lists {
+            width: 75%;
             li {
                 margin-left: 30px;
                 font-size: 24px;
@@ -86,8 +90,10 @@
             margin-bottom: 8px;
         }
         &__descr {
-            width: 85%;
             font-size: 20px;
+        }
+        &__lists {
+            width: 85%;
             li {
                 margin-left: 30px;
                 font-size: 20px;
@@ -112,8 +118,10 @@
             margin-bottom: 8px;
         }
         &__descr {
-            width: 95%;
             font-size: 18px;
+        }
+        &__lists {
+            width: 95%;
             li {
                 margin-left: 40px;
                 font-family: var(--sfc);
