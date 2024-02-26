@@ -1,0 +1,71 @@
+.comment {
+    width: 97%;
+    border-radius: 10px;
+    background: var(--white);
+    box-shadow: 10px 20px 20px 0 rgba(0, 0, 0, 0.2);
+    padding: 39px 42px 44px 42px;
+    display: grid;
+    grid-template: repeat(3, max-content) / 96px 1fr;
+    gap: 7px 43px;
+    user-select: none;
+    &__text {
+        grid-area: 1 / 1 / 2 / 3;
+        color: var(--gray-text-light);
+        font-family: var(--sfc);
+        font-size: 18px;
+        font-weight: 400;
+    }
+    &__avatar {
+        grid-area: 2 / 1 / 4 / 2;
+        img {
+            width: 100%;
+        }
+    }
+    &__name {
+        color: #626780;
+        font-family: var(--sfpd);
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 30px; /* 166.667% */
+    }
+    &__rating {
+        p {
+            color: var(--gray-text-light);
+            font-family: var(--sfc);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+        }
+        svg {
+            width: 12px;
+            height: 12px;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .comment {
+        padding: 20px 32px 24px 32px;
+        gap: 7px 12px;
+        &__text {
+            font-size: 16px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .comment {
+        padding: 20px 22px 24px 22px;
+        grid-template: repeat(3, max-content) / 76px 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .comment {
+        grid-template: repeat(3, max-content) / 66px 1fr;
+        &__text {
+            margin-bottom: 5px;
+        }
+    }
+}

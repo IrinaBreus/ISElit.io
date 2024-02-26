@@ -1,3 +1,5 @@
+import mask from "./mask";
+
 const forms = (triggerS, formS) => {
     try {
         const trigger = document.querySelector(triggerS),
@@ -5,6 +7,7 @@ const forms = (triggerS, formS) => {
               btnClose = form.querySelector('.form__close'),
               btnSubmit  = form.querySelector('button');
     
+        mask();
         trigger.addEventListener('click', () => {
             form.style.display = 'block';
         })

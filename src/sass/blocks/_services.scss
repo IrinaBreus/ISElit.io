@@ -13,9 +13,11 @@
         display: grid;
         grid-template: repeat(2, max-content) / repeat(3, 1fr);
         gap: 1px;
+        border: 2px solid white;
     }
     &__box {
         background: var(--white);
+        width: 100%;
         padding: 40px 30px 24px 30px;
         text-align: center;
         svg {

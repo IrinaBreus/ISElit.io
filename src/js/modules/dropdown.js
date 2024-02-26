@@ -4,27 +4,33 @@ const dropdown = () => {
 
     let timerId;
 
-    dropdown.addEventListener('mouseover', () => {
+    dropdown.addEventListener('mouseenter', () => {
         if (content.style.display = 'none') {
-            content.style.display = 'block';
+            showContent();
         }
     });
 
-    dropdown.addEventListener('mouseout', () => {
+    dropdown.addEventListener('mouseleave', () => {
         timerId = setTimeout(() => {
-            content.style.display = 'none';
-        }, 500);
+            hiddenContent();
+        }, 1000);
     });
 
-    content.addEventListener('mouseover', () => {
-        content.style.display = 'block';
+    content.addEventListener('mouseenter', () => {
+        showContent();
         clearTimeout(timerId);
     });
 
-    content.addEventListener('mouseout', () => {
-        content.style.display = 'none';
+    content.addEventListener('mouseleave', () => {
+        hiddenContent();
     });
+
+    function showContent() {
+        content.style.display = 'block';
+    }
+    
+    function hiddenContent() {
+        content.style.display = 'none';
+    }
 }
-
-
 export default dropdown;

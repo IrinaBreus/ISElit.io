@@ -17,6 +17,29 @@
     --sfc: 'San Francisco Compact Display';
     --extra: 'New York Extra Large';
     --sedan: 'Sedan Regular';
+    
+    --swiper-pagination-color: #696A86;
+    --swiper-pagination-bullet-size: 10px;
+    --swiper-pagination-bullet-width: 10px;
+    --swiper-pagination-bullet-height: 8px;
+    --swiper-pagination-bullet-vertical-gap: 16px;
 }
+
+@import '../../node_modules/swiper/swiper.scss';
+@import '../../node_modules/swiper/modules/pagination.scss';
+
 @import 'base/*.scss';
 @import 'blocks/*.scss';
+
+.swiper-wrapper {
+    margin-bottom: 50px;
+}
+// .swiper-pagination-bullet-active {
+//     background: #3a3a3a;
+//     opacity: 1;
+// }
+
+// .swiper-pagination-bullet {
+//     background: #b7b7b7;
+//     opacity: .5;
+// }
